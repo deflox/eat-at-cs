@@ -1,0 +1,41 @@
+{% extends 'templates/default.twig' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+    <div class="container main">
+        <h1 class="page-title">Eat@CS</h1>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                {% include 'templates/flash.twig' %}
+                <p>Just fill out the form below to sign up for Eat@CS.</p>
+                <form method="post" action="{{ path_for('sign-up') }}">
+                    <div class="form-group">
+                        <label for="username">Your name:</label>
+                        <input type="text" class="form-control" id="username" name="username" value="{{ old['username'] }}">
+                        <span class="form-error">{{ errors['username']|first }}</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your E-Mail:</label>
+                        <input type="email" class="form-control" id="email" name="email" value="{{ old['email'] }}">
+                        <span class="form-error">{{ errors['email']|first }}</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Your password:</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                        <span class="form-error">{{ errors['password']|first }}</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password_repeat">Repeat your password:</label>
+                        <input type="password" class="form-control" id="password_repeat" name="password_repeat">
+                        <span class="form-error">{{ errors['password_repeat']|first }}</span>
+                    </div>
+                    <div class="clearfix">
+                        <input type="submit" class="btn btn-primary pull-right" value="Sign up">
+                        <a href="{{ base_url() }}">Already signed up?</a><br>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

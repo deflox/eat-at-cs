@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /intern/
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /assets/img/
+Disallow: /assets/files/
+Disallow: /assets/fonts/
+Disallow: /reservation/admin/

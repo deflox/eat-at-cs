@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Eat@CS - {% block title %}{% endblock %}</title>
+
+    <!-- Styles -->
+    <link href="{{ base_url() }}assets/css/font-awesome.min.css" rel="stylesheet" >
+    <link href="{{ base_url() }}assets/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="{{ base_url() }}assets/css/app.css" rel="stylesheet" >
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+
+<!-- JavaScript -->
+<script src="{{ base_url() }}assets/js/jquery.min.js"></script>
+<script src="{{ base_url() }}assets/js/bootstrap.min.js"></script>
+<script src="{{ base_url() }}assets/js/validate.min.js"></script>
+{% block javascript %}{% endblock %}
+
+</html>

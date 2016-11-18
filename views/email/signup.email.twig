@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            padding: 0;
+            margin: 0 0 50px 0;
+        }
+    </style>
+</head>
+<body>
+<h2>Welcome to Eat@CS!</h2>
+<p>Please click on the link below to verify your e-mail address. This will also enable the weekly emails.</p>
+<a href="{{ base_url() }}verify/{{ token }}">{{ base_url() }}verify/{{ token }}</a>
+<br>
+<br>
+<br>
+<small>Do not answer on this email.</small>
+</body>
+</html>

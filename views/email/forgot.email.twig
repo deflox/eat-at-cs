@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            padding: 0;
+            margin: 0 0 50px 0;
+        }
+    </style>
+</head>
+<body>
+<h2>Forgot your password.</h2>
+<p>In case you forgot your password, click on the link below. It will provide you a form to change your password.</p>
+<a href="{{ base_url() }}reset/{{ token }}">{{ base_url() }}reset/{{ token }}</a>
+<br>
+<br>
+<br>
+<small>Do not answer on this email.</small>
+</body>
+</html>
